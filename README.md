@@ -7,6 +7,12 @@ Link: TBA
 
 ![demo image](./images/demo.png)
 
+## Usage
+```bash
+$ pip install -r requirements.txt
+$ streamlit run app.py
+```
+
 
 ## Reference
 - [sangrimlee/bert-base-multilingual-cased-nsmc](https://huggingface.co/sangrimlee/bert-base-multilingual-cased-nsmc)
