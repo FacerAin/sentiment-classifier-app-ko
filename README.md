@@ -3,7 +3,7 @@
 - **Streamlit**을 활용한 웹 어플리케이션 제작
 
 ## Demo
-Link: TBA  
+[Demo Link](http://sentiment.eclground.ml/) 
 
 ![demo image](./images/demo.png)
 
