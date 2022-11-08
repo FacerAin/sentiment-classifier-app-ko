@@ -18,12 +18,15 @@ classifier = pipeline(
 
 
 st.title("Korean Sentiment Classifier")
-sentence = st.text_input(label="Input Sentence")
-run = st.button("Go!")
 
-if run:
+with st.form(key="form"):
+    sentence = st.text_input(label="Input Sentence", placeholder="나는 오늘 기분이 좋다.")
+    submit = st.form_submit_button("Go!")
+
+if submit:
     st.write("Results")
-    results = classifier(sentence)[0]
+    with st.spinner("두뇌 풀가동!"):
+        results = classifier(sentence)[0]
     label = results["label"]
     score = results["score"]
     display_result(label, score)
